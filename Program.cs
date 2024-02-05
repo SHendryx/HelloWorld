@@ -5,6 +5,8 @@ WorkWithIntegers();
 OrderPrecedence();
 PrecisionAndLimits();
 WorkWithDoubles();
+WorkWithDecimals();
+AreaOfCircle();
 
 void WorkWithStrings()
 {
@@ -124,6 +126,8 @@ void PrecisionAndLimits()
 
 void WorkWithDoubles()
 {
+  Console.WriteLine("\n=== Doubles ===");
+
   double a = 5;
   double b = 4;
   double c = 2;
@@ -142,4 +146,31 @@ void WorkWithDoubles()
 
   double third = 1.0 / 3.0;
   Console.WriteLine(third);
+}
+
+void WorkWithDecimals()
+{
+  Console.WriteLine("\n=== Decimals ===");
+
+  decimal min = decimal.MinValue;
+  decimal max = decimal.MaxValue;
+  Console.WriteLine($"The range of the decimal type is {min} to {max}");
+  
+  Console.WriteLine("\nDouble vs Decimal");
+  double a = 1.0;
+  double b = 3.0;
+  Console.WriteLine($"Double: {a} / {b} = {a / b}");
+
+  decimal c = 1.0M;
+  decimal d = 3.0M;
+  Console.WriteLine($"Decimal: {c} / {d} = {c / d})");
+}
+
+void AreaOfCircle()
+{
+  Console.WriteLine("\n=== Area of a Circle ===");
+  double radius = 2.50;
+  double area = Math.PI * Math.Pow(radius, 2);
+  Console.WriteLine($"Radius: {radius}");
+  Console.WriteLine($"πr²: {area}");
 }
