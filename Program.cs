@@ -4,7 +4,7 @@ WorkWithStrings();
 WorkWithIntegers();
 OrderPrecedence();
 PrecisionAndLimits();
-Doubles();
+WorkWithDoubles();
 
 void WorkWithStrings()
 {
@@ -122,7 +122,7 @@ void PrecisionAndLimits()
   Console.WriteLine($"An example of overflow: {max} + 3 = {what}");
 }
 
-void Doubles()
+void WorkWithDoubles()
 {
   double a = 5;
   double b = 4;
